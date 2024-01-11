@@ -1,1 +1,1 @@
-# hanneskonst-github.io
+# hanneskonst.github.io
