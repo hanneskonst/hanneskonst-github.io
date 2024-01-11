@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannes konst</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center; /* Center align text */
+        }
+
+        /* Styling for images with unique IDs */
+        #packasna-logo, #ahorare-logo, #symfonin-logo, #festbordet-logo {
+            width: 60%; /* Adjust the width as needed (percentage or other appropriate unit) */
+            max-width: 2000px; /* Set a maximum width to maintain image quality */
+            height: auto; /* Maintain aspect ratio */
+            margin: 20px 20px; /* Add more vertical margin and some horizontal margin for extra space */
+        }
+
+        /* Styling for the container of the first image and heading */
+        #first-image-container {
+            margin-top: 200px; /* Add more top margin to create space between the top of the window and the first image */
+        }
+
+        /* Increasing the font size for <h1> elements */
+        h1 {
+            font-size: 20px; /* Adjust the font size as needed */
+            margin-bottom: 800px; /* Adjust top margin to control vertical space between image and heading */
+        }
+
+        /* Styling for the back-to-index button */
+        #back-to-index-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none; /* Remove default underline for anchor tag */
+            margin-top: 20px; /* Add some top margin for space */
+        }
+
+    </style>
+</head>
+<body>
+   <a id="back-to-index-button" href="index">Tillbaka till startsidan</a>
+    <!-- Image and heading for 'Packåsna' -->
+   <div id="first-image-container">
+        <img id="packasna-logo" src="images/Packåsnan.jpg" alt="Packåsna Logo">
+        <h1>Packåsna</h1>
+    </div>
+
+    <!-- Image and heading for 'Åhörare' -->
+    <div>
+        <img id="ahorare-logo" src="images/Åhörare.jpg" alt="Åhörare Logo">
+        <h1>Åhörare</h1>
+    </div>
+
+    <!-- Image and heading for 'Symfonin' -->
+    <div>
+        <img id="symfonin-logo" src="images/Symfonin.jpg" alt="Symfonin Logo">
+        <h1>Symfonin</h1>
+    </div>
+
+    <!-- Image and heading for 'Festbordet' -->
+    <div>
+        <img id="festbordet-logo" src="images/Festbordet.jpg" alt="Festbordet Logo">
+        <h1>Festbordet</h1>
+    </div>
+</body>
+</html>
