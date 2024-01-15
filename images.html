@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hannes konst</title>
-
     <style>
         body {
             background: linear-gradient(to right, #000000, #525252);
@@ -24,99 +18,68 @@
             background-repeat: no-repeat;
         }
 
- /* Styling for all images with a common class */
-.img-container {
-    width: auto; /* Adjusted to fit the image and border */
-    height: auto;
-    margin: 40px auto; /* Adjust the top and bottom margins */
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    padding: 5px; /* Adjust the padding to decrease space between image and border */
-    box-sizing: border-box; /* Include border and padding in the total width and height */
-}
-
-/* Hover effect - scale the image slightly on hover */
-.img-container:hover {
-    transform: scale(1.05);
-}
-
-
-
-
-        /* Styling for the container of the first image and heading */
-        #first-image-container {
-            margin-top: 20px;
+        a {
+            text-decoration: none;
+            color: white;
+            border: none;
+            outline: none;
         }
 
-        /* Increasing the font size for <h1> elements */
-        h1 {
-            font-size: 20px;
-            margin-bottom: 50px;
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #ccc;
+            padding: 10px;
         }
 
-        /* Styling for the back-to-index button */
+        .image {
+            width: 100%;
+            max-width: 400px;
+            border: 5px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .label {
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 100px;
+        }
+
         #back-to-index-button {
-            padding: 10px 20px;
+            padding: 12px 24px;
             font-size: 18px;
-            background-color: #4CAF50;
+            background-color: #603434;
             color: white;
             border: none;
             cursor: pointer;
             text-decoration: none;
             margin-top: 20px;
+            width: fit-content;
+            margin: 20px auto;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-
-#back-to-index-button {
-    padding: 12px 24px;
-    font-size: 18px;
-    background-color: #603434;
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 20px;
-    width: fit-content;
-    margin: 20px auto;
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-}
-
-#back-to-index-button:hover {
-    background-color: #593030; /* Darker green on hover */
-}
-
-
     </style>
+    <title>Image Gallery</title>
 </head>
-
 <body>
-    <a id="back-to-index-button" href="index">Tillbaka till startsidan</a>
- <!-- Image and heading for 'Packåsna' -->
-<div id="first-image-container" class="img-container">
-    <img id="packasna-logo" src="images/Packåsnan.jpg" alt="Packåsna Logo">
-    <h1>Packåsna</h1>
-</div>
 
-<!-- Image and heading for 'Åhörare' -->
-<div class="img-container">
-     <img id="ahorare-logo" src="images/Åhörare.jpg" alt="Åhörare Logo">
-    <h1>Åhörare</h1>
-</div>
+<a id="back-to-index-button" href="index">Back to Index</a>
 
-<!-- Image and heading for 'Symfonin' -->
-<div class="img-container">
-   <img id="symfonin-logo" src="images/Symfonin.jpg" alt="Symfonin Logo">
-    <h1>Symfonin</h1>
-</div>
+<div class="image-container">
+    <img class="image" src="images/Packåsnan.jpg" alt="Image 1">
+    <p class="label">Packåsnan</p>
 
-<!-- Image and heading for 'Festbordet' -->
-<div class="img-container">
-    <img id="festbordet-logo" src="images/Festbordet.jpg" alt="Festbordet Logo">
-    <h1>Festbordet</h1>
+    <img class="image" src="images/Åhörare.jpg" alt="Image 2">
+    <p class="label">Åhörare</p>
+
+    <img class="image" src="images/Symfonin.jpg" alt="Image 3">
+    <p class="label">Symfonin</p>
+
+    <img class="image" src="images/Festbordet.jpg" alt="Image 4">
+    <p class="label">Festbordet</p>
 </div>
 
 </body>
-
 </html>
