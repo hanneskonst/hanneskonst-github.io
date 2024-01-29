@@ -3,35 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Hannes konst</title>
-
+    <title>Välkommen till Hannes konst</title>
     <style>
         body {
-            background-color: black;
+			background: linear-gradient(to right, #48405A, #65597F);           
             color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 100px;
+            font-family: Georgia;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        a {
+            display: inline-block;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer; /* Add pointer cursor for better user feedback */
+        }
+
+        a:hover {
+            background-color: #333; /* Darken the background on hover */
+        }
+
+        #contact-details {
+            display: none;
+            color: white;
         }
 
         h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        #start-button {
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
+            padding: 20px;
+            margin: 0; /* Remove default margin */
         }
     </style>
 </head>
 <body>
+
+    <a href="#" class="contact-link" onclick="toggleContactDetails()">Kontakt</a>
+    <a href="images.html" class="images-link">Bilder på målningar</a>
+    <a href="#" class="about-me-link">Om mig</a>
+    
     <h1>Välkommen till Hannes konst</h1>
-    <button id="start-button" onclick="window.location.href='/images.html'">Bilder på målningar</button>
+
+    <div id="contact-details">
+        <p>Hannes Nilsson</p>
+        <p>Email: hannesnilsson511@gmail.com</p>
+    </div>
+
+    <script>
+        function toggleContactDetails() {
+            var contactDetails = document.getElementById('contact-details');
+            contactDetails.style.display = (contactDetails.style.display === 'none' || contactDetails.style.display === '') ? 'block' : 'none';
+        }
+    </script>
 
 </body>
 </html>
