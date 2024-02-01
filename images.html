@@ -7,7 +7,7 @@
         body {
             background: linear-gradient(to right, #000000, #525252);
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: Georgia;
             text-align: center;
             margin: 0;
             height: 100%;
@@ -17,7 +17,24 @@
             background-size: 100% 100%;
             background-repeat: no-repeat;
         }
+		/* Style for the navigation bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+			position: fixed; /* Set the position to fixed */
+            width: 100%; /* Make it take up the full width of the viewport */
+            top: 0; /* Stick it to the top */
+        }
 
+        /* Style for the navigation bar links */
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
         a {
             text-decoration: none;
             color: white;
@@ -71,12 +88,23 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
+		 #contact-details {
+            display: none;
+            color: white;
+        }
     </style>
     <title>Image Gallery</title>
 </head>
 <body>
-
-<a id="back-to-index-button" href="index.html">Tillbaks till startsidan</a>
+<!-- Navigation Bar -->
+<nav>
+    
+    <a href="index.html">HEM</a>
+    <a href="images.html">GALLERI</a>
+    <a href="#Contact" class="contact-link" onclick="toggleContactDetails()">KONTAKT</a>
+	<a href="#AboutMe">OM MIG</a>
+    <!-- Add more links as needed -->
+</nav>
 
 <div class="image-container">
     <div class="label">
@@ -95,10 +123,17 @@
     </div>
 
     <div class="label">
-        <img class="image" src="images/Festbordet.jpg" alt="Image 4">
-        <p>Festbordet</p>
+        <img class="image" src="images/Bar.jpg" alt="Image 4">
+        <p>Bar</p>
     </div>
 </div>
+
+ <script>
+        function toggleContactDetails() {
+            var contactDetails = document.getElementById('contact-details');
+            contactDetails.style.display = (contactDetails.style.display === 'none' || contactDetails.style.display === '') ? 'block' : 'none';
+        }
+ </script>
 
 </body>
 </html>
